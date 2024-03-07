@@ -1,0 +1,26 @@
+[
+   {
+      "name":"John",
+      "age":30,
+      "city":"New York",
+      "info":"Placeholder"
+   },
+   {
+      "name":"Jane",
+      "age":25,
+      "city":"Los Angeles",
+      "info":"Placeholder"
+   },
+   {
+      "name":"Jim",
+      "age":40,
+      "city":"Chicago",
+      "info":"Placeholder"
+   },
+   {
+      "name":"Jill",
+      "age":35,
+      "city":"Houston",
+      "info":"Placeholder"
+   }
+]

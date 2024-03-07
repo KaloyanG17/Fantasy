@@ -1,0 +1,81 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url('images/pitch.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+
+.player {
+   position: absolute;
+   width: 50px; /* Adjust as needed */
+   height: 50px; /* Adjust as needed */
+   background-color: rgba(255, 255, 255, 0.5); /* Adjust as needed */
+   border: 3px solid #000; /* Adjust as needed */
+   border-radius: 50%;
+   text-align: center;
+   line-height: 50px; /* Vertically center the text */
+   font-size: 14px; /* Adjust as needed */
+   color: #000; /* Adjust as needed */
+}
+
+.player__name {
+   font-weight: bold;
+}
+
+#player--gk {
+   top: 46%;
+   left: 5%;
+}
+
+#player--def--left {
+   top: 15%;
+   left: 25%;
+}
+
+#player--def--mid--left {
+   top: 35%;
+   left: 25%;
+}
+
+#player--def--mid--right {
+   top: 60%;
+   left: 25%;
+}
+
+#player--def--right {
+   top: 80%;
+   left: 25%;
+}
+
+#player--mid--left {
+   top: 20%;
+   left: 50%;
+}
+
+#player--mid--mid {
+   top: 45%;
+   left: 50%;
+}
+
+#player--mid--right {
+   top: 75%;
+   left: 50%;
+}
+
+#player--att--left {
+   top: 20%;
+   left: 70%;
+}
+
+#player--att--mid {
+   top: 45%;
+   left: 75%;
+}
+
+#player--att--right {
+   top: 75%;
+   left: 70%;
+}
