@@ -25,6 +25,14 @@ body {
    color: #000; /* Adjust as needed */
 }
 
+.player__position {
+   width: 200px;
+   flex: auto;
+   display: flex;
+   font-size: 14px;
+   margin-left: -25px;
+}
+
 
 #player--gk {
    top: 46%;
