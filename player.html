@@ -66,8 +66,7 @@
       </div>
       <div id="player_details">
           <h1 id="player_name"></h1>
-          <h2 id="player_position"></h2>
-          <h3>Player Stats:</h3>
+          <h3 id="player_position">Position: </h2>
           <h4 id="player_stats"></h4>
           <h3>Description:</h3>
           <p id="player_info"></p>
@@ -87,9 +86,9 @@
                 data.forEach(element => {
                     if (element.number == playerNumber) {
                         document.getElementById('player_name').innerText = element.name;
-                        document.getElementById('player_position').innerText = element.position;
+                        document.getElementById('player_position').innerText = "Position: " + element.position;
                         document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name}">`;
-                        document.getElementById('player_stats').innerText = element.stats;
+                        document.getElementById('player_stats').innerText = "Stats: " + element.stats;
                         document.getElementById('player_info').innerText = element.info;
                     }
                 });

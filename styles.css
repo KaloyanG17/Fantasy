@@ -25,9 +25,6 @@ body {
    color: #000; /* Adjust as needed */
 }
 
-.player__name {
-   font-weight: bold;
-}
 
 #player--gk {
    top: 46%;
