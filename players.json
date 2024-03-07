@@ -1,26 +1,30 @@
 [
    {
-      "name":"John",
-      "age":30,
-      "city":"New York",
+      "number":1,
+      "name":"Player1",
+      "position":"Goalkeeper",
+      "picture":"https://www.w3schools.com/w3images/avatar2.png",
       "info":"Placeholder"
    },
    {
-      "name":"Jane",
-      "age":25,
-      "city":"Los Angeles",
+      "number":2,
+      "name":"Player2",
+      "position":"Defender",
+      "picture":"images/pic1.jpg",
       "info":"Placeholder"
    },
    {
-      "name":"Jim",
-      "age":40,
-      "city":"Chicago",
+      "number":3,
+      "name":"Player3",
+      "position":"Defender",
+      "picture":"images/pic1.jpg",
       "info":"Placeholder"
    },
    {
-      "name":"Jill",
-      "age":35,
-      "city":"Houston",
+      "number":4,
+      "name":"Player4",
+      "position":"Defender",
+      "picture":"images/pic1.jpg",
       "info":"Placeholder"
    }
 ]

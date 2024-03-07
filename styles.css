@@ -6,6 +6,10 @@ body {
    background-position: center;
    background-repeat: no-repeat;
    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
 
 .player {
@@ -67,7 +71,7 @@ body {
 
 #player--att--left {
    top: 20%;
-   left: 70%;
+   left: 75%;
 }
 
 #player--att--mid {
@@ -77,5 +81,5 @@ body {
 
 #player--att--right {
    top: 75%;
-   left: 70%;
+   left: 75%;
 }

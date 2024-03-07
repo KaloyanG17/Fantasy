@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Fantasy League - Player Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        #player_picture {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+        #player_picture img {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        #player_details {
+            flex: 1;
+        }
+        h1, h2, h3, h4 {
+            margin-top: 0;
+        }
+        #player_stats {
+            font-weight: bold;
+        }
+        #player_description {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+      <div id="player_picture">
+          <img src="" alt="" id="player_image">
+      </div>
+      <div id="player_details">
+          <h1 id="player_name"></h1>
+          <h2 id="player_position"></h2>
+          <h3>Player Stats:</h3>
+          <h4 id="player_stats"></h4>
+          <h3>Description:</h3>
+          <p id="player_description"></p>
+      </div>
+  </div>
+    <script>
+        // Get the current URL
+        const currentUrl = window.location.href;
+
+        // Get the player number from the URL
+        const playerNumber = currentUrl.split('=')[1];
+
+        // Get the player data from the JSON file
+        fetch('players.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(element => {
+                    if (element.number == playerNumber) {
+                        document.getElementById('player_name').innerText = element.name;
+                        document.getElementById('player_position').innerText = element.position;
+                        document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name}">`;
+                        document.getElementById('player_stats').innerText = element.stats;
+                        document.getElementById('player_description').innerText = element.description;
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
