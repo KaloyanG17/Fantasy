@@ -9,7 +9,7 @@
    },
    {
       "number":2,
-      "name":"Player2",
+      "name":"Camilo Saldaña",
       "position":"Defender",
       "stats":"Tackles: 304, Apperances: 102",
       "picture":"images/player2.png",
@@ -73,7 +73,7 @@
    },
    {
       "number":10,
-      "name":"Player10",
+      "name":"Huthaifa Al-Wawi",
       "position":"Attacker",
       "stats":"Goals: 200, Apperances: 300",
       "picture":"images/player10.png",
