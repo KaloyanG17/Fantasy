@@ -40,86 +40,121 @@
             flex: 1;
             padding: 20px;
         }
+        #logo-button {
+            position: absolute;
+            top: 20px;
+            right: 20px; /* Adjust for desired position from right */
+            display: inline-block;
+        }
+        #logo-button img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Make the image circular */
+        }
   </style>
 </head>
 <body>
+   <a id="logo-button" href="index.html">
+      <img src="images/logo.jpeg" alt="Back" style="width: 100px; height: 100px;">
+  </a>
    <div class="sidebar">
-      <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Managers</a>
-      <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Reserves</a>
-      <a href="#"><i class="fas fa-couch"></i> Subs</a>
-      <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Home Fans</a>
-      <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Away Fans</a>
+      <a href="menu.html?menu=managers"><i class="fa fa-user" aria-hidden="true"></i> Managers</a>
+      <a href="subs.html"><i class="fas fa-couch" aria-hidden="true"></i> Subs</a>
+      <a href="menu.html?menu=home"><i class="fa fa-users" aria-hidden="true"></i> Home Fans</a>
+      <a href="menu.html?menu=away"><i class="fa fa-users" aria-hidden="true"></i> Away Fans</a>
   </div>
     <main>
         <div class="pitch">
             <!-- Goalkeeper -->
             <a href="player.html?player=1">
                <div class="player" id="player--gk">
-                  <div class="player__name">Player 1</div>
-                  <div class="player__position">GK</div>
+                  <div class="player_pic">
+                     <img src="images/goalkeeper.png" alt="Rami Hamadeh" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Rami Hamadeh</div>
                </div>
             </a> 
             <!-- Defenders -->
             <a href="player.html?player=2">
                <div class="player" id="player--def--left"> 
-                  <div class="player__name">Player 2</div>
+                  <div class="player_pic">
+                     <img src="images/player2.png" alt="Hamza Choudhury" style="width:70px; border-radius: 50%;">
+                  </div>
                   <div class="player__position">DEF</div>
                </div>
             </a>
             <a href="player.html?player=3">
                <div class="player" id="player--def--mid--left">
-                     <div class="player__name">Player 3</div>
-                     <div class="player__position">Ibrahim Abuimeir</div>
+                  <div class="player_pic">
+                     <img src="images/player3.png" alt="Ibrahim Abuimeir" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Ibrahim Abuimeir</div>
                </div>
             </a>
             <a href="player.html?player=4">
                <div class="player" id="player--def--mid--right">
-                  <div class="player__name">Player 4</div>
-                  <div class="player__position">DEF</div>
+                  <div class="player_pic">
+                     <img src="images/player4.png" alt="Hamza Choudhury" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Hazem Alrekhawi</div>
                </div>
             </a>
             <a href="player.html?player=5">
                <div class="player" id="player--def--right">
-                  <div class="player__name">Player 5</div>
+                  <div class="player_pic">
+                     <img src="images/player5.png" alt="Hamza Choudhury" style="width:70px; border-radius: 50%;">
+                  </div>
                   <div class="player__position">Hamza Choudhury</div>
                </div>
             </a>
             <!-- Midfielders -->
             <a href="player.html?player=6">
                <div class="player" id="player--mid--left">
-                  <div class="player__name">Player 6</div>
+                  <div class="player_pic">
+                     <img src="images/player6.png" alt="Sami Al-Da’our" style="width:70px; border-radius: 50%;">
+                  </div>
                   <div class="player__position">Sami Al-Da’our</div>
                </div>
             </a>
             <a href="player.html?player=7">
                <div class="player" id="player--mid--mid">
-                  <div class="player__name">Player 7</div>
-                  <div class="player__position">MID</div>
+                  <div class="player_pic">
+                     <img src="images/player7.png" alt="Atta Jaber" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Atta Jaber</div>
                </div>
             </a>
             <a href="player.html?player=8">
                <div class="player" id="player--mid--right">
-                  <div class="player__name">Player 8</div>
-                  <div class="player__position">MID</div>
+                  <div class="player_pic">
+                     <img src="images/player8.png" alt="Ahmed Abu Khadija" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Ahmed Abu Khadija </div>
                </div>
             </a>
             <!-- Attackers -->
             <a href="player.html?player=9">
                <div class="player" id="player--att--left">
-                  <div class="player__name">Player 9</div>
-                  <div class="player__position">ATT</div>
+                  <div class="player_pic">
+                     <img src="images/player9.png" alt="Mohammed Barakat" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Mohammed Barakat</div>
                </div>
             </a>
             <a href="player.html?player=10">
                <div class="player" id="player--att--mid">
-                  <div class="player__name">Player 10</div>
+                  <div class="player_pic">
+                     <img src="images/player10.png" alt="Hamza Choudhury" style="width:70px; border-radius: 50%;">
+                  </div>
                   <div class="player__position">ATT</div>
                </div>
             </a>
             <a href="player.html?player=11">
                <div class="player" id="player--att--right">
-                  <div class="player__name">Player 11</div>
-                  <div class="player__position">ATT</div>
+                  <div class="player_pic">
+                     <img src="images/player11.png" alt="Anwar El Ghazi" style="width:70px; border-radius: 50%;">
+                  </div>
+                  <div class="player__position">Anwar El Ghazi <br>(VC)</div>
                </div>
             </a>
         </div>

@@ -71,14 +71,6 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: large;
         }
-        #player_position {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-        }
-        #player_stats {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-        }
     </style>
 </head>
 <body>
@@ -87,15 +79,13 @@
   </a>
   <a id="logo-button" href="index.html">
     <img src="images/logo.jpeg" alt="Back" style="width: 100px; height: 100px;">
-  </a>
+    </a>
    <div id="container">
       <div id="player_picture">
           <img src="" alt="" id="player_image">
       </div>
       <div id="player_details">
           <h1 id="player_name"></h1>
-          <h3 id="player_position">Position: </h2>
-          <h4 id="player_stats"></h4>
           <h3 id="player_desc">Description:</h3>
           <p id="player_info"></p>
       </div>
@@ -105,18 +95,16 @@
         const currentUrl = window.location.href;
 
         // Get the player number from the URL
-        const playerNumber = currentUrl.split('=')[1];
+        const menuSelect = currentUrl.split('=')[1];
 
         // Get the player data from the JSON file
-        fetch('players.json')
+        fetch('menu.json')
             .then(response => response.json())
             .then(data => {
                 data.forEach(element => {
-                    if (element.number == playerNumber) {
+                    if (element.menu == menuSelect) {
                         document.getElementById('player_name').innerText = element.name;
-                        document.getElementById('player_position').innerText = "Position: " + element.position;
                         document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name} style="width=400px;">`;
-                        document.getElementById('player_stats').innerText = "Stats: " + element.stats;
                         document.getElementById('player_info').innerText = element.info;
                     }
                 });

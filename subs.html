@@ -89,38 +89,16 @@
     <img src="images/logo.jpeg" alt="Back" style="width: 100px; height: 100px;">
   </a>
    <div id="container">
-      <div id="player_picture">
-          <img src="" alt="" id="player_image">
-      </div>
-      <div id="player_details">
-          <h1 id="player_name"></h1>
-          <h3 id="player_position">Position: </h2>
-          <h4 id="player_stats"></h4>
-          <h3 id="player_desc">Description:</h3>
-          <p id="player_info"></p>
-      </div>
+      <div id="container">
+         <div class="substitute" onclick="showPlayerDetails(1)">
+             <img src="images/sub1.png" alt="Substitute 1">
+             <h3>Mahmoud Sarsak</h3>
+         </div>
+         <div class="substitute" onclick="showPlayerDetails(2)">
+             <img src="images/sub2.png" alt="Substitute 2">
+             <h3>Mahmoud Wadi</h3>
+         </div>
+     </div>
   </div>
-    <script>
-        // Get the current URL
-        const currentUrl = window.location.href;
-
-        // Get the player number from the URL
-        const playerNumber = currentUrl.split('=')[1];
-
-        // Get the player data from the JSON file
-        fetch('players.json')
-            .then(response => response.json())
-            .then(data => {
-                data.forEach(element => {
-                    if (element.number == playerNumber) {
-                        document.getElementById('player_name').innerText = element.name;
-                        document.getElementById('player_position').innerText = "Position: " + element.position;
-                        document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name} style="width=400px;">`;
-                        document.getElementById('player_stats').innerText = "Stats: " + element.stats;
-                        document.getElementById('player_info').innerText = element.info;
-                    }
-                });
-            });
-    </script>
 </body>
 </html>
