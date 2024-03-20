@@ -16,38 +16,13 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
+            justify-content: space-between; /* Add space between items */
         }
-        #back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            display: inline-block;
+        .substitute {
+            text-align: center;
             cursor: pointer;
-            color: black;
-        }
-         #back-button:hover {
-               color: red;
-         }
-        #player_picture {
-            margin-right: 20px;
-            flex: 0 0 auto;
-        }
-        #player_picture img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        #player_details {
-            flex: 1;
-        }
-        h1, h2, h3, h4 {
-            margin-top: 0;
-        }
-        #player_stats {
-            font-weight: bold;
-        }
-        #player_description {
-            margin-top: 10px;
+            flex: 1; /* Equal width for each item */
+            margin: 0 10px; /* Add margin for spacing */
         }
         #logo-button {
             position: absolute;
@@ -60,24 +35,27 @@
             height: 100px;
             border-radius: 50%; /* Make the image circular */
         }
-        #player_name {
-            font-family: Arial, Helvetica, sans-serif;
+        #back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            cursor: pointer;
+            color: black;
         }
-        #player_desc {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
+        #back-button:hover {
+               color: red;
+         }
+        .substitute img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
-        #player_info {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
+        .substitute h3 {
+            margin-top: 10px;
         }
-        #player_position {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-        }
-        #player_stats {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
+        .substitute:hover {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
@@ -89,16 +67,20 @@
     <img src="images/logo.jpeg" alt="Back" style="width: 100px; height: 100px;">
   </a>
    <div id="container">
-      <div id="container">
-         <div class="substitute" onclick="showPlayerDetails(1)">
-             <img src="images/sub1.png" alt="Substitute 1">
-             <h3>Mahmoud Sarsak</h3>
-         </div>
-         <div class="substitute" onclick="showPlayerDetails(2)">
-             <img src="images/sub2.png" alt="Substitute 2">
-             <h3>Mahmoud Wadi</h3>
-         </div>
-     </div>
+      <div class="substitute" onclick="showPlayerDetails(1)">
+          <img src="images/sub1.png" alt="Substitute 1">
+          <h3>Mahmoud Sarsak</h3>
+      </div>
+      <div class="substitute" onclick="showPlayerDetails(2)">
+          <img src="images/sub2.png" alt="Substitute 2">
+          <h3>Mahmoud Wadi</h3>
+      </div>
   </div>
+
+  <script>
+      function showPlayerDetails(subNumber) {
+          window.location.href = "subsPage.html?subs=" + subNumber;
+      }
+  </script>
 </body>
 </html>

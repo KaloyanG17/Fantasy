@@ -25,7 +25,7 @@
             cursor: pointer;
             color: black;
         }
-        #back-button:hover {
+         #back-button:hover {
                color: red;
          }
         #player_picture {
@@ -71,41 +71,52 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: large;
         }
+        #player_position {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        #player_stats {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
     </style>
 </head>
 <body>
-   <a id="back-button" href="index.html">
-      <i class="fa fa-chevron-circle-left" style="font-size:46px"></i>
-  </a>
-  <a id="logo-button" href="index.html">
-    <img src="images/logo.jpeg" alt="Back" style="width: 100px; height: 100px;">
-    </a>
-   <div id="container">
-      <div id="player_picture">
-          <img src="" alt="" id="player_image">
-      </div>
-      <div id="player_details">
-          <h1 id="player_name"></h1>
-          <h3 id="player_desc">Description:</h3>
-          <p id="player_info"></p>
-      </div>
+         <a id="back-button" href="subs.html">
+            <i class="fa fa-chevron-circle-left" style="font-size:46px"></i>
+        </a>
+        <a id="logo-button" href="index.html">
+          <img src="images/logo.jpeg" alt="Back" style="width: 100px; height: 100px;">
+          </a>
+         <div id="container">
+            <div id="player_picture">
+                <img src="" alt="" id="player_image">
+            </div>
+            <div id="player_details">
+                <h1 id="player_name"></h1>
+                <h3 id="player_desc">Description:</h3>
+                <p id="player_info"></p>
+            </div>
+        </div>
   </div>
     <script>
         // Get the current URL
         const currentUrl = window.location.href;
 
         // Get the player number from the URL
-        const menuSelect = currentUrl.split('=')[1];
+        const playerNumber = currentUrl.split('=')[1];
 
         // Get the player data from the JSON file
         fetch('menu.json')
             .then(response => response.json())
             .then(data => {
                 data.forEach(element => {
-                    if (element.menu == menuSelect) {
+                    if (element.menu == "subs") {
+                        if(element.number == playerNumber){
                         document.getElementById('player_name').innerText = element.name;
                         document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name} style="width=400px;">`;
                         document.getElementById('player_info').innerText = element.info;
+                        }
                     }
                 });
             });
