@@ -86,7 +86,6 @@
       </div>
       <div id="player_details">
           <h1 id="player_name"></h1>
-          <h3 id="player_desc">Description:</h3>
           <p id="player_info"></p>
       </div>
   </div>
@@ -102,10 +101,18 @@
             .then(response => response.json())
             .then(data => {
                 data.forEach(element => {
+                    if (element.menu == "managers"){
+                        document.getElementById('player_name').innerText = element.name;
+                        document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name} style="width=400px;">`;
+                        document.getElementById('player_info').innerText = "Description: " + "\n" + element.info;
+                    }
                     if (element.menu == menuSelect) {
                         document.getElementById('player_name').innerText = element.name;
                         document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name} style="width=400px;">`;
                         document.getElementById('player_info').innerText = element.info;
+                    }
+                    if (element.menu == "home") {
+                        document.getElementById('player_picture').innerHTML = `<img src="${element.picture}" alt="${element.name} style="width=300px;">`;
                     }
                 });
             });
