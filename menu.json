@@ -3,36 +3,32 @@
       "menu":"managers",
       "name":"Hani Al-Masdar",
       "picture":"images/manager.png",
-      "info":"Al-Masdar will be the manager of my fantasy team as a tribute for all of the hard work and support he has shown not only as a coach of the Palestinian Olympic football team but also as an excellent athlete during his prime. His lifelong commitment to football deserves recognition and praise, especially after Al-Masdar “was struck by shrapnel from a missile close to his home in the Gaza Strip's”, he became a martyr on the 6th of January 2024. However, his spirit, illuminating from the heavens above, will serve as a guiding light for my fantasy team, leading us to victory and his legacy will live on forever."
+      "info":"Al-Masdar will be the manager of my fantasy team as a tribute to all of the hard work and support he has shown not only as a coach of the Palestinian Olympic football team but also as an excellent athlete during his prime. His lifelong commitment to football deserves recognition and praise, especially after Al-Masdar 'was struck by shrapnel from a missile close to his home in the Gaza Strip's' and became a martyr on January 6, 2024. However, his spirit, illuminating from the heavens above, will serve as a guiding light for my fantasy team, leading us to victory, and his legacy will live on forever."
    },
    {
       "menu":"home",
-      "name":"Player4",
-      "position":"Defender",
-      "stats":"Tackles: 300, Apperances: 200",
-      "picture":"https://www.w3schools.com/w3images/avatar4.png",
-      "info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "name":"Palestinian Chant",
+      "picture":"images/Handala.gif",
+      "info":"Victims for 75 years \n Now nobody fears \n We have no more tears \n Going up a gear \n To make your hatred \n disappear"
    },
    {
       "menu":"away",
-      "name":"Hamza Choudhury",
-      "position":"Right Back",
-      "stats":"Assists: 200, Apperances: 300",
-      "picture":"https://www.w3schools.com/w3images/avatar5.png",
-      "info":"Hamza Choudhury: During the 2021 FA cup-final Choudhury outwardly showed his support for Palestine. Choudhury, who plays for Leicester showed his solidatory with Palestine by flying the Palestinian flag high whilst celebrating his victory. His defensive position on the pitch, is also translated off the pitch, by defending Palestine at such a prolific event in the sporting world. As Choudhury defends Palestine so openly, particularly within the Western world, it shows his fearlessness, making him a great asset to my fantasy team as a right back."
+      "name":"Israeli Chant",
+      "picture":"images/star.webp",
+      "info":"With our 'Ultra' support \n Without a thought \n Don’t get caught \n For your Palestinian \n days are short"
    },
    {
       "menu":"subs",
       "number":1,
       "name":"Mahmoud Sarsak",
       "picture":"images/sub1.png",
-      "info":"Sarsak had his football career dictated to him by the Israeli forces who prevented him from travelling outside of Gaza. After signing for the “West Bank Premier League team”, he was literally stopped from crossing at the Erez border, where “he was arrested and placed in administrative detention”. The Israeli occupation permeates every facet of life, even extending its reach into sports, stripping away the dignity and autonomy of Palestinians. Thus, I have decided to place Sarsak on the bench of my fantasy team, as a substitute: a metaphor symbolising that there is a physical barrier always stopping Sarsak from fulfilling his dreams."
+      "info":"Sarsak had his football career dictated to him by the Israeli forces, who prevented him from travelling outside of Gaza. After signing for the 'West Bank Premier League team,' he was literally stopped from crossing at the Erez border, where 'he was arrested and placed in administrative detention.' The Israeli occupation permeates every facet of life, even extending its reach into sports, stripping away the dignity and autonomy of Palestinians. Thus, I have decided to place Sarsak on the bench of my fantasy team as a substitute, a metaphor symbolising that there is a physical barrier always stopping Sarsak from fulfilling his dreams."
    },
    {
       "menu":"subs",
       "number":2,
       "name":"Mahmoud Wadi",
       "picture":"images/sub2.png",
-      "info":"Wadi too had his football career dictated to him by the Israeli forces who prevented him from travelling “freely between West Bank cities”. Although Wadi secured a contract with a premier league team in the West Bank, his return to Gaza for a match against a local team meant “he was denied permission to return afterwards, despite holding a permit to travel both ways”. Therefore, his career in the West Bank league was very short-lived. Just like Sarsak, Wadi had a physical barrier preventing him from playing outside of Gaza, which is why he is also a substitute on my fantasy team."
+      "info":"Wadi too had his football career dictated to him by the Israeli forces, who prevented him from travelling 'freely between West Bank cities.' Although Wadi secured a contract with a premier league team in the West Bank, his return to Gaza for a match against a local team meant “he was denied permission to return afterwards, despite holding a permit to travel both ways'. Therefore, his career in the West Bank League was very short-lived. Just like Sarsak, Wadi had a physical barrier preventing him from playing outside of Gaza, which is why he is also a substitute on my fantasy team."
    }
 ]
